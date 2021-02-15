@@ -3,7 +3,7 @@ print("Input your password, give any input if you are decrypting")
 password = input()
 
 print("")
-print("Input your buffer (KB) size (encrypting or decrypting")
+print("Input your buffer (KB) size (encrypting or decrypting)")
 bufferSize = int(input())
 # encrypt
 print("")
@@ -13,7 +13,7 @@ print("type in de if you are decrypting and en if you are encrypting")
 status = input()
 
 if status == "en":
-    pyAesCrypt.encryptFile(name, "output.txt.aes", password, bufferSize)
+    pyAesCrypt.encryptFile(name, "output.aes", password, bufferSize)
 elif status == "de":
     print("Input file extension")
     ext = input()
