@@ -10,3 +10,4 @@ n = int(input())
 
 for i in range(n):
     text = hashlib.sha3_512(text.encode('utf-8')).hexdigest()
+print(text)
