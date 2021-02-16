@@ -1,5 +1,5 @@
 import pyAesCrypt
-print("Input your password, give any input if you are decrypting")
+print("Input your password")
 password = input()
 
 print("")
