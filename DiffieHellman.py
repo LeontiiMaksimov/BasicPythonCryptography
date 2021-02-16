@@ -13,7 +13,9 @@ random1 = 16384 + secrets.randbelow(10000)
 
 
 # To send the information we will be using the pure python implementation of the Diffie-Hellman algorithm.
-d1 = pyDH.DiffieHellman()
+print("Input the Diffie-Hellman group number")
+n = int(input())
+d1 = pyDH.DiffieHellman(n)
 d1_pubkey = d1.gen_public_key()
 print("Your public key is:")
 print(d1_pubkey)
